@@ -233,63 +233,101 @@ const Usabout = () => {
                 </div>
 
                 {/* Core Values */}
-                <div className="pt-1 text-left">
-                    <h3 className="text-4xl font-semibold mb-12">Our Core Values</h3>
-                    <div className="flex md:grid-cols-3 gap-10">
-                        <img src="\Frame 70.png" alt="" className="mx-auto mb-4" />
+                <div className="max-w-7xl mx-auto">
+
+                    {/* Header */}
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-12 sm:mb-16">
+                        Our Core Values
+                    </h1>
+
+                    {/* Values Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20">
+
+                        {/* Value 1 */}
+                        <div className="flex flex-col items-center text-center">
+                            <div className="w-32 h-32 rounded-full border-2 border-dashed border-red-600 flex items-center justify-center mb-6">
+                                <div className="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center">
+                                    <img src="public\innovation.png" className="w-14 h-14" />
+                                </div>
+                            </div>
+                            <h3 className="text-base sm:text-lg text-white font-light">
+                                Driven by Innovation
+                            </h3>
+                        </div>
+
+                        {/* Value 2 */}
+                        <div className="flex flex-col items-center text-center">
+                            <div className="w-32 h-32 rounded-full border-2 border-dashed border-red-600 flex items-center justify-center mb-6">
+                                <div className="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center">
+                                    <div className="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center">
+                                        <img src="public\quality.png" className="w-14 h-14" />
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 className="text-base sm:text-lg text-white font-light">
+                                Commitment to Quality
+                            </h3>
+                        </div>
+
+                        {/* Value 3 */}
+                        <div className="flex flex-col items-center text-center">
+                            <div className="w-32 h-32 rounded-full border-2 border-dashed border-red-600 flex items-center justify-center mb-6">
+                                <div className="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center">
+                                    <div className="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center">
+                                        <img src="public\real value.png" className="w-14 h-14" />
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 className="text-base sm:text-lg text-white font-light">
+                                Provide Real Value
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+            </section>            
+            <section
+                className="relative opacity-100 bg-cover bg-center py-14 md:py-20 mt-30"
+                style={{
+                    backgroundImage: "url('/b2.png')", // 👈 set your image as background
+                }}
+            >
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-black/50"></div>
+
+                {/* Stats content */}
+                <div className="relative z-10 max-w-6xl mx-auto flex flex-wrap justify-center md:justify-between text-center text-white px-6">
+                    <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                        <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
+                            15+
+                        </p>
+                        <p>Year of experience</p>
+                    </div>
+
+                    <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                        <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
+                            25+
+                        </p>
+                        <p>Country we export</p>
+                    </div>
+
+                    <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                        <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
+                            30000+
+                        </p>
+                        <p>Box productions</p>
+                    </div>
+
+                    <div className="w-1/2 md:w-1/4">
+                        <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
+                            150+
+                        </p>
+                        <p>Attractive Designs</p>
                     </div>
                 </div>
             </section>
 
-            {/* Stats Section */}
-            <section
-                className="relative bg-cover bg-center py-14 md:py-20 mt-20"
-                style={{
-                    backgroundImage: "url('/Screenshot 2025-11-01 124249.png')",
-                }}
-            >
-                <section
-                    className="relative opacity-100 bg-cover bg-center py-14 md:py-20 mt-20"
-                    style={{
-                        backgroundImage: "url('/b2.png')", // 👈 set your image as background
-                    }}
-                >
-                    {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black/50"></div>
 
-                    {/* Stats content */}
-                    <div className="relative z-10 max-w-6xl mx-auto flex flex-wrap justify-center md:justify-between text-center text-white px-6">
-                        <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
-                            <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
-                                15+
-                            </p>
-                            <p>Year of experience</p>
-                        </div>
-
-                        <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
-                            <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
-                                25+
-                            </p>
-                            <p>Country we export</p>
-                        </div>
-
-                        <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
-                            <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
-                                30000+
-                            </p>
-                            <p>Box productions</p>
-                        </div>
-
-                        <div className="w-1/2 md:w-1/4">
-                            <p className="text-3xl md:text-4xl font-bold text-[#ff1f1f] mb-1">
-                                150+
-                            </p>
-                            <p>Attractive Designs</p>
-                        </div>
-                    </div>
-                </section>
-
-            </section>
         </div>
     );
 };
