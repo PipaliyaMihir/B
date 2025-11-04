@@ -11,28 +11,32 @@ const OurSpecialities = () => {
   ];
 
   return (
-    <div className="bg-[#0f0f0f] text-white py-16 px-10 md:mx-28 text-left">
+    <div className="bg-[#0f0f0f] text-white py-16 px-6 sm:px-10 md:px-20 lg:px-28">
       {/* Heading */}
-      <div className="mb-10">
-        <p className="text-[#3ba17d] text-sm mb-2 font-light">Our Specialities</p>
-        <h2 className="text-3xl font-serif">The Breezo Difference</h2>
+      <div className="text-center md:text-left mb-12">
+        <p className="text-[#3ba17d] text-sm mb-2 font-medium tracking-wide uppercase">
+          Our Specialities
+        </p>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif">
+          The Breezo Difference
+        </h2>
       </div>
 
-      {/* Feature Icons */}
-      <div className="flex flex-wrap justify-center gap-16 md:gap-22 mt-16">
+      {/* Features */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-10 sm:gap-14 mt-10 justify-items-center">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-28 group transition-transform duration-300 hover:scale-105"
+            className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
           >
-            <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 mb-4">
               <img
                 src={feature.img}
                 alt={feature.title}
-                className="w-20 h-20 object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
-            <p className="text-sm text-gray-300 text-center leading-tight text-light">
+            <p className="text-sm sm:text-base text-gray-300 leading-tight">
               {feature.title}
             </p>
           </div>

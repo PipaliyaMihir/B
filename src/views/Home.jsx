@@ -3,7 +3,7 @@ import bg from "../../public/bg.jpg";
 import About from "./About";
 import Advantage from "../components/Advantage";
 import CollectionSection from "./CollectionSection";
-import TileSizes from "./TileSizes";
+import AvailableTileSizes from "./tile";
 import OurSpecialities from "./OurSpecialities";
 import CompanyBanner from "./CompanyBanner";
 
@@ -18,7 +18,7 @@ const Home = () => {
             <About />
             <Advantage />
             <CollectionSection />
-            <TileSizes />
+            <AvailableTileSizes />
             <OurSpecialities />
         </div>
     );

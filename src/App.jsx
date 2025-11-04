@@ -18,7 +18,6 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll smoothly to top on route change
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
@@ -28,9 +27,11 @@ const ScrollToTop = () => {
 const App = () => {
   return (
     <>
-      <div style={{ scrollBehavior: "smooth" }}>
+      {/* Full background wrapper */}
+      <div style={{ backgroundColor: "#1E1E1E", minHeight: "100vh", scrollBehavior: "smooth" }}>
         <Navbar />
         <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/company" element={<Company />} />
@@ -41,8 +42,10 @@ const App = () => {
           <Route path="/tec" element={<Technology />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+        <Footer />
       </div>
-      <Footer />
+
       <SocialBar />
     </>
   );

@@ -18,36 +18,37 @@ export default function CatalogueGrid() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#0e0e0e] text-white px-4 py-16 md:py-24">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="relative flex justify-center items-center py-40 pt-6">
-          <h1 className="text-[180px] font-serif font-medium text-gray-400/20 select-none tracking-wide">
+    <section className="min-h-screen bg-[#0e0e0e] text-white px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-24">
+      <div className="max-w-7xl mx-auto">
+        {/* Hero Title - Fully Responsive */}
+        <div className="relative flex justify-center items-center py-12 sm:py-20 md:py-32 lg:py-40 pt-4 sm:pt-6">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[180px] font-serif font-medium text-gray-400/20 select-none tracking-wide">
             Catalogue
           </h1>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-10 justify-items-center">
+        {/* Grid - Fully Responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-items-center">
           {catalogueItems.map((item) => (
             <div
               key={item.id}
-              className="group cursor-pointer flex flex-col items-center w-60 "
+              className="group cursor-pointer flex flex-col items-center w-full max-w-[280px] sm:max-w-xs md:max-w-sm"
             >
-              {/* Image */}
-              <div className="relative bg-neutral-900 overflow-hidden shadow-lg transition-all duration-500">
+              {/* Image Container */}
+              <div className="relative bg-neutral-900 overflow-hidden shadow-lg transition-all duration-500 w-full">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-[300px] object-cover group-hover:scale-105 rounded-lg transition-transform duration-500"
+                  className="w-full h-[220px] sm:h-[260px] md:h-[300px] object-cover group-hover:scale-105 rounded-lg transition-transform duration-500"
                 />
               </div>
 
-              {/* Info */}
-              <div className="mt-3 text-center">
-                <h3 className="text-2xl text-gray-300 mb-2 mt-6">{item.title}</h3>
-                <button className="flex items-center gap-2 border border-[#3B6E54] text-[#3B6E54] px-6 py-2 rounded-md text-sm font-semibold hover:bg-emerald-600 hover:text-black transition-all duration-300 mt-8">
+              {/* Info Section */}
+              <div className="mt-3 sm:mt-4 text-center w-full">
+                <h3 className="text-xl sm:text-2xl text-gray-300 mb-2 mt-4 sm:mt-6">{item.title}</h3>
+                <button className="flex items-center justify-center gap-2 border border-[#3B6E54] text-[#3B6E54] px-5 sm:px-6 py-2 rounded-md text-sm font-semibold hover:bg-emerald-600 hover:text-black transition-all duration-300 mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto mx-auto">
                   <span>Download</span>
-                  <Download className="w-6 h-6" />
+                  <Download className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
               </div>
             </div>
