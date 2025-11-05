@@ -21,7 +21,7 @@ export default function CatalogueGrid() {
     <section className="min-h-screen bg-[#1e1e1e] text-white px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Hero Title - Fully Responsive */}
-        <div className="relative flex justify-center items-center py-8 sm:pb-12 md:pb-16 lg:pb-30">
+        <div className="relative flex justify-center items-center py-8 sm:py-45">
           <h1
             className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
             style={{ fontFamily: '"Cormorant Garamond", serif' }}
@@ -32,11 +32,11 @@ export default function CatalogueGrid() {
 
 
         {/* Grid - Fully Responsive */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-items-center">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-items-center">
           {catalogueItems.map((item) => (
             <div
               key={item.id}
-              className="group cursor-pointer flex flex-col items-center w-full max-w-[280px] sm:max-w-xs md:max-w-sm"
+              className="group cursor-pointer flex flex-col items-center w-full max-w-[320px] sm:max-w-xs md:max-w-sm"
             >
               {/* Image Container */}
               <div className="relative bg-neutral-900 overflow-hidden shadow-lg transition-all duration-500 w-full">
@@ -48,7 +48,7 @@ export default function CatalogueGrid() {
               </div>
 
               {/* Info Section */}
-              <div className="mt-3 sm:mt-4 text-center w-full">
+              <div className="mt-3 sm:mt-4 text-center w-full mb-8">
                 <h3 className="text-xl sm:text-2xl text-gray-300 mb-2 mt-4 sm:mt-6">{item.title}</h3>
                 <button className="flex items-center justify-center gap-2 border border-[#3B6E54] text-[#3B6E54] px-5 sm:px-6 py-2 rounded-md text-sm font-semibold hover:bg-emerald-600 hover:text-black transition-all duration-300 mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto mx-auto">
                   <span>Download</span>

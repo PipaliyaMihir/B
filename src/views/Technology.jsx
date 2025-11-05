@@ -4,17 +4,17 @@ const Technology = () => {
   return (
     <div className="bg-[#1E1E1E] relative mx-auto w-[90%] text-white overflow-hidden">
       {/* --- Top Export Title --- */}
-      <div className="relative flex justify-center items-center py-20">
+      <div className="relative flex justify-center items-center py-45">
         <h1
-                    className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
-                    style={{ fontFamily: '"Cormorant Garamond", serif' }}
-                >
-                    Technology
-                </h1>
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
+          style={{ fontFamily: '"Cormorant Garamond", serif' }}
+        >
+          Technology
+        </h1>
       </div>
 
       {/* Innovation Section */}
-      <section className="mb-20">
+      <section className="mb-20 mx-7 sm:mx-0">
         <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
           Innovation
         </p>
@@ -119,7 +119,7 @@ const Technology = () => {
       </section>
 
       {/* Quality Section */}
-      <section>
+      <section className="mx-7 sm:mx-0">
         <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
           Crafted With Care
         </p>
