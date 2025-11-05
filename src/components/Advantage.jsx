@@ -3,7 +3,7 @@ import { FaUsers, FaBrain, FaThLarge, FaChartLine } from "react-icons/fa";
 
 const Advantage = () => {
   return (
-    <div className="bg-[#0e0e0e] text-white py-16 px-6 md:px-10 lg:px-28">
+    <div className="bg-[#1e1e1e] text-white py-16 px-6 md:px-10 lg:px-28">
       <div className="text-left max-w-7xl mx-auto">
         {/* Section Header */}
         <p className="text-[#3ba17d] text-sm mb-2 font-medium text-center md:text-left">

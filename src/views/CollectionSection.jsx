@@ -11,7 +11,7 @@ const collections = [
 
 const CollectionSection = () => {
   return (
-    <div className="bg-[#0e0e0e] text-white py-16 sm:py-20 px-4 sm:px-8 lg:px-20 xl:mx-28">
+    <div className="bg-[#1e1e1e] text-white py-16 sm:py-20 px-4 sm:px-8 lg:px-20 xl:mx-28">
       {/* Section Header */}
       <p className="text-[#3ba17d] text-xs sm:text-sm mb-4 sm:mb-6 font-medium text-center sm:text-left">
         Our Collection

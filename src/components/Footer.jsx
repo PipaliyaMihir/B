@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       {/* Instagram Header Section */}
-      <div className="bg-[#0e0e0e] flex flex-col items-center justify-center py-8 px-4">
+      <div className="bg-[#131313] flex flex-col items-center justify-center py-8 px-4">
         <div className="flex flex-col md:flex-row items-center gap-3 text-center md:text-left">
           <span className="text-gray-300 text-lg italic leading-tight mb-2 md:mb-0">
             Follow <br /> us on
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-black text-gray-300 py-12 px-6 sm:px-10 lg:px-20">
+      <footer className="bg-[#131313] text-gray-300 py-12 px-6 sm:px-10 lg:px-20">
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start text-center lg:text-left gap-16 lg:gap-28 max-w-7xl mx-auto">
           {/* Left - Logo & Socials */}
           <div className="flex flex-col items-center lg:items-start space-y-6">

@@ -16,7 +16,7 @@ const images = [
 
 const CompanyBanner = () => {
     return (
-        <div className="relative w-full overflow-hidden">
+      <div className="relative w-[90%] mx-auto overflow-hidden">
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
@@ -28,7 +28,7 @@ const CompanyBanner = () => {
                     clickable: true,
                 }}
                 navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay, Pagination]}
                 className="w-full h-[250px] sm:h-[350px] md:h-[480px] lg:h-[600px]"
             >
                 {images.map((img, index) => (

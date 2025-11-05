@@ -33,10 +33,13 @@ const Export = () => {
     return (
         <>
             {/* --- Main Export Section --- */}
-            <div className="bg-[#0e0e0e] text-white overflow-hidden">
+            <div className="bg-[#1e1e1e] text-white overflow-hidden">
                 {/* --- Top Export Title --- */}
                 <div className="relative flex justify-center items-center py-20">
-                    <h1 className="text-[60px] sm:text-[100px] md:text-[150px] lg:text-[180px] font-serif font-bold text-gray-400/20 select-none tracking-wide text-center">
+                    <h1
+                        className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
+                        style={{ fontFamily: '"Cormorant Garamond", serif' }}
+                    >
                         Export
                     </h1>
                 </div>
@@ -127,7 +130,7 @@ const Export = () => {
             </div>
 
             {/* --- Contact Section --- */}
-            <div className="bg-[#0e0e0e] text-white py-16 sm:py-20 px-4 md:px-12 lg:px-24">
+            <div className="bg-[#1e1e1e] text-white py-16 sm:py-20 px-4 md:px-12 lg:px-24">
                 <section className="max-w-5xl mx-auto space-y-20">
                     {/* Global Footprint */}
                     <div>

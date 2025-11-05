@@ -11,7 +11,7 @@ const OurSpecialities = () => {
   ];
 
   return (
-    <div className="bg-[#0f0f0f] text-white py-16 px-6 sm:px-10 md:px-20 lg:px-28">
+    <div className="bg-[#1e1e1e] text-white py-16 px-6 sm:px-10 md:px-20 lg:px-28">
       {/* Heading */}
       <div className="text-center md:text-left mb-12">
         <p className="text-[#3ba17d] text-sm mb-2 font-medium tracking-wide uppercase">

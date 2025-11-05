@@ -3,13 +3,17 @@ import { ArrowRight } from "lucide-react";
 
 const Usabout = () => {
     return (
-        <div className="bg-black text-white font-serif overflow-hidden">
+        <div className="bg-[#1e1e1e] relative mx-auto w-[90%] text-white font-serif overflow-hidden">
             {/* Hero Section - Fully Responsive */}
             <section className="relative text-center py-12 sm:py-16 md:py-20 lg:py-28">
-                <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4">
+                <h1
+                    className="relative mx-auto w-[90%] text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
+                    style={{ fontFamily: '"Cormorant Garamond", serif' }}
+                >
                     About Us
                 </h1>
             </section>
+
 
             {/* Main Content */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 space-y-12 sm:space-y-14 md:space-y-16">
@@ -278,7 +282,7 @@ const Usabout = () => {
                     backgroundImage: "url('/b2.png')",
                 }}
             >
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0"></div>
 
                 <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center text-white px-4 sm:px-6">
                     <div>

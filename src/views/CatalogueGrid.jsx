@@ -18,14 +18,18 @@ export default function CatalogueGrid() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#0e0e0e] text-white px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-24">
+    <section className="min-h-screen bg-[#1e1e1e] text-white px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Hero Title - Fully Responsive */}
-        <div className="relative flex justify-center items-center py-12 sm:py-20 md:py-32 lg:py-40 pt-4 sm:pt-6">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[180px] font-serif font-medium text-gray-400/20 select-none tracking-wide">
+        <div className="relative flex justify-center items-center py-8 sm:pb-12 md:pb-16 lg:pb-30">
+          <h1
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
+            style={{ fontFamily: '"Cormorant Garamond", serif' }}
+          >
             Catalogue
           </h1>
         </div>
+
 
         {/* Grid - Fully Responsive */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-items-center">
