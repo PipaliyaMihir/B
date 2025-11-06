@@ -1,10 +1,37 @@
 import React from "react";
+import T1 from "../components/T1";
+import T2 from "../components/T2";
+import T3 from "../components/T3";
+import T4 from "../components/T4";
 
 const Technology = () => {
+  const features = [
+    {
+      title: "Modern Manufacturing",
+      desc: "State-of-the-art manufacturing with modern machinery and digital precision.",
+      icon: <T1 />,
+    },
+    {
+      title: "Design Excellence",
+      desc: "Enhanced design quality — perfecting texture, tone, surface finish, and strength.",
+      icon: <T2 />,
+    },
+    {
+      title: "Aesthetic Perfection",
+      desc: "Every tile is a masterpiece of refined aesthetics and engineered durability.",
+      icon: <T3 />,
+    },
+    {
+      title: "Timeless Innovation",
+      desc: "Breezo embodies innovation, where technology meets timeless design.",
+      icon: <T4 />,
+    },
+  ];
+
   return (
     <div className="bg-[#1E1E1E] relative mx-auto w-[90%] text-white overflow-hidden">
       {/* --- Top Export Title --- */}
-      <div className="relative flex justify-center items-center py-16 sm:py-25">
+      <div className="relative flex justify-center items-center py-16 sm:py-24">
         <h1
           className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
           style={{ fontFamily: '"Cormorant Garamond", serif' }}
@@ -14,7 +41,7 @@ const Technology = () => {
       </div>
 
       {/* Innovation Section */}
-      <section className="mb-20 mx-7 sm:mx-0">
+      <section className="mb-20 mx-4 sm:mx-0">
         <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
           Innovation
         </p>
@@ -43,39 +70,14 @@ const Technology = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-        {[
-          {
-            title: "Modern Manufacturing",
-            desc: "State-of-the-art manufacturing with modern machinery and digital precision.",
-            img: "public/Group 150.svg",
-          },
-          {
-            title: "Design Excellence",
-            desc: "Enhanced design quality — perfecting texture, tone, surface finish, and strength.",
-            img: "public/Group 139.svg",
-          },
-          {
-            title: "Aesthetic Perfection",
-            desc: "Every tile is a masterpiece of refined aesthetics and engineered durability.",
-            img: "public/Group 140.svg",
-          },
-          {
-            title: "Timeless Innovation",
-            desc: "Breezo embodies innovation, where technology meets timeless design.",
-            img: "public/Group 141.svg",
-          },
-        ].map((feature, index) => (
+      <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mb-20">
+        {features.map((feature, index) => (
           <div
             key={index}
             className="text-center group hover:scale-105 transition-transform duration-300"
           >
             <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
-              <img
-                src={feature.img}
-                alt={feature.title}
-                className="w-12 h-12 object-contain"
-              />
+              {feature.icon}
             </div>
             <h3 className="text-lg sm:text-xl font-serif mb-3">{feature.title}</h3>
             <p className="text-gray-400 text-sm sm:text-base px-4">{feature.desc}</p>
@@ -83,10 +85,8 @@ const Technology = () => {
         ))}
       </section>
 
-
-
       {/* Quality Section */}
-      <section className="mx-7 sm:mx-0">
+      <section className="mx-4 sm:mx-0 mb-20">
         <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
           Crafted With Care
         </p>

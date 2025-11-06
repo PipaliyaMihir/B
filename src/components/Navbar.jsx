@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav className="backdrop-blur-md bg-[#1e1e1e]/40 text-white w-full fixed top-0 left-0 z-50 shadow-lg border-b border-white/10">
+    <nav className="backdrop-blur-md bg-[#1e1e1e]/40 text-white h-19 w-full fixed top-0 left-0 z-50 shadow-lg border-b border-white/10">
       <div className="flex justify-between items-center px-6 sm:px-10 md:px-20 lg:px-28 py-4">
         {/* Logo */}
         <Link to="/" onClick={closeMenu} className="flex items-center justify-center">

@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+import E1 from "../components/E1"; 
+import E2 from "../components/E2";
+import E3 from "../components/E3";
+import E4 from "../components/E4";
+import E5 from "../components/E5";
+import E6 from "../components/E6";
 
 const Export = () => {
   const features = [
-    { img: "/e1.png", title: "Low Maintenance" },
-    { img: "/e2.png", title: "Customize Packaging" },
-    { img: "/e3.png", title: "Availability Assurance" },
-    { img: "/e4.png", title: "Range of Surface & Size" },
-    { img: "/e5.png", title: "Innovative design & Quality" },
-    { img: "/e6.png", title: "Quick Customer Support" },
+    { icon: <E1 />, title: "Low Maintenance" },
+    { icon: <E2 />, title: "Customize Packaging" },
+    { icon: <E3 />, title: "Availability Assurance" },
+    { icon: <E4 />, title: "Range of Surface & Size" },
+    { icon: <E5 />, title: "Innovative design & Quality" },
+    { icon: <E6 />, title: "Quick Customer Support" },
   ];
 
   const [formData, setFormData] = useState({
@@ -28,7 +34,7 @@ const Export = () => {
 
   return (
     <div className="bg-[#1e1e1e] text-white w-[95%] mx-auto">
-      {/* --- Top Export Heading --- */}
+      {/* Top Export Heading */}
       <div className="relative flex justify-center items-center py-16">
         <h1
           className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
@@ -38,7 +44,7 @@ const Export = () => {
         </h1>
       </div>
 
-      {/* --- Why We Best Section --- */}
+      {/* Why We Best Section */}
       <section className="py-12 px-4 sm:px-6 md:px-10 mx-auto">
         <p className="text-sm text-[#3ba17d] mb-2 text-left md:text-left tracking-wide mx-7 sm:mx-0">
           Why We Best
@@ -54,12 +60,9 @@ const Export = () => {
               key={index}
               className="flex flex-col items-center text-center space-y-2 sm:space-y-4"
             >
-              <div className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full shadow-md bg-neutral-900">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-                />
+              <div className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full">
+                {/* Render React component instead of img */}
+                {item.icon}
               </div>
               <p className="text-[12px] sm:text-sm text-gray-300 leading-tight w-[110px] sm:w-[150px]">
                 {item.title}
@@ -92,7 +95,6 @@ const Export = () => {
               expanding its footprint to establish a solid presence worldwide.
             </p>
           </div>
-
           {/* Right Image */}
           <div className="flex justify-center">
             <img
@@ -174,6 +176,7 @@ const Export = () => {
           </button>
         </div>
       </section>
+
     </div>
   );
 };

@@ -1,5 +1,8 @@
 import React from "react";
 import { FaUsers, FaBrain, FaThLarge, FaChartLine } from "react-icons/fa";
+import A1 from "./A1";
+import A2 from "./A2";
+import A3 from "./A3";
 
 const Advantage = () => {
   return (
@@ -17,8 +20,8 @@ const Advantage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-14 place-items-center">
           {/* 1️⃣ Growing Group */}
           <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 w-full sm:max-w-xs">
-            <div className="border-2 border-dashed border-red-500 rounded-full p-4 sm:p-5 w-16 sm:w-20 h-16 sm:h-20 flex items-center justify-center">
-              <FaChartLine className="text-white text-3xl sm:text-4xl" />
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
+              <A1 />
             </div>
             <h3 className="text-base sm:text-lg">Growing Group</h3>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed tracking-wide text-justify">
@@ -31,8 +34,8 @@ const Advantage = () => {
 
           {/* 2️⃣ Young Mindset */}
           <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 w-full sm:max-w-xs mt-6 sm:mt-0">
-            <div className="border-2 border-dashed border-red-500 rounded-full p-4 sm:p-5 w-16 sm:w-20 h-16 sm:h-20 flex items-center justify-center">
-              <FaBrain className="text-white text-4xl sm:text-5xl" />
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
+              <A2 />
             </div>
             <h3 className="text-base sm:text-lg md:text-xl">Young Mindset</h3>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed tracking-wide text-justify">
@@ -45,8 +48,8 @@ const Advantage = () => {
 
           {/* 3️⃣ Largest Collection of Tiles */}
           <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 w-full sm:max-w-xs mt-6 sm:mt-0">
-            <div className="border-2 border-dashed border-red-500 rounded-full p-4 sm:p-5 w-16 sm:w-20 h-16 sm:h-20 flex items-center justify-center">
-              <FaThLarge className="text-white text-4xl sm:text-5xl" />
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
+              <A3 />
             </div>
             <h3 className="text-base sm:text-lg">Largest Collection of Tiles</h3>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed tracking-wide text-justify">

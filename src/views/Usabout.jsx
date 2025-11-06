@@ -1,5 +1,8 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import C1 from "../components/C1";
+import C2 from "../components/C2";
+import C3 from "../components/C3";
 
 const Usabout = () => {
     return (
@@ -238,10 +241,8 @@ const Usabout = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
                         {/* Value 1 */}
                         <div className="flex flex-col items-center text-center">
-                            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-dashed border-red-600 flex items-center justify-center mb-4 sm:mb-6">
-                                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-neutral-800 flex items-center justify-center">
-                                    <img src="public/innovation.png" alt="Innovation" className="w-12 h-12 sm:w-14 sm:h-14" />
-                                </div>
+                            <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
+                                <C1 />
                             </div>
                             <h3 className="text-sm sm:text-base md:text-lg text-white font-light">
                                 Driven by Innovation
@@ -250,10 +251,8 @@ const Usabout = () => {
 
                         {/* Value 2 */}
                         <div className="flex flex-col items-center text-center">
-                            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-dashed border-red-600 flex items-center justify-center mb-4 sm:mb-6">
-                                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-neutral-800 flex items-center justify-center">
-                                    <img src="public/quality.png" alt="Quality" className="w-12 h-12 sm:w-14 sm:h-14" />
-                                </div>
+                            <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
+                                <C2 />
                             </div>
                             <h3 className="text-sm sm:text-base md:text-lg text-white font-light">
                                 Commitment to Quality
@@ -262,10 +261,8 @@ const Usabout = () => {
 
                         {/* Value 3 */}
                         <div className="flex flex-col items-center text-center sm:col-span-2 lg:col-span-1">
-                            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-dashed border-red-600 flex items-center justify-center mb-4 sm:mb-6">
-                                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-neutral-800 flex items-center justify-center">
-                                    <img src="public/real value.png" alt="Real Value" className="w-12 h-12 sm:w-14 sm:h-14" />
-                                </div>
+                            <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
+                                <C3 />
                             </div>
                             <h3 className="text-sm sm:text-base md:text-lg text-white font-light">
                                 Provide Real Value

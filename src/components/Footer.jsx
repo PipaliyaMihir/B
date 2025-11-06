@@ -7,15 +7,15 @@ const Footer = () => {
     <>
       {/* Instagram Header Section */}
       <div className="bg-[#1e1e1e] flex flex-col items-center justify-center py-6 sm:py-8 px-4">
-        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
+        <div className="flex flex-row sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
           <span className="text-gray-300 text-sm sm:text-lg italic leading-tight">
-            Follow <br className="sm:hidden" /> us on
+            Follow <br className="sm:block" /> us on
           </span>
           <div className="flex items-center justify-center">
             <img
               src="/footer.png"
               alt="Instagram"
-              className="w-[180px] sm:w-[250px] h-12 sm:h-16 hover:opacity-80 cursor-pointer transition"
+              className="w-[150px] sm:w-[250px] h-10 sm:h-16 hover:opacity-80 cursor-pointer transition"
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Text */}
-        <div className="text-center text-gray-500 mt-8 sm:mt-10 text-[10px] sm:text-xs mb-[350px] sm:mb-0">
+        <div className="text-center text-gray-500 mt-8 sm:mt-10 text-[10px] sm:text-xs">
           <p>© 2025 Breezo Group of Company | All rights reserved.</p>
         </div>
       </footer>
