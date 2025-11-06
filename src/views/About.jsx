@@ -21,7 +21,7 @@ const About = () => {
 
                     <div className="relative group w-full max-w-[568px] mx-auto">
                         <img
-                            src={aboutImage}
+                            src="public/home-img.png"
                             alt="Interior Design"
                             className="rounded-lg w-full h-auto md:h-[284px] object-cover opacity-80 group-hover:opacity-100 transition-all duration-500"
                         />
@@ -42,9 +42,9 @@ const About = () => {
                     {/* ✅ Button that navigates to /usabout */}
                     <button
                         onClick={() => navigate("/usabout")}
-                        className="mt-8 bg-[#3ba17d] hover:bg-[#2d7d61] text-white px-6 py-3 rounded-md transition-all duration-300 text-xs sm:text-sm md:text-base font-medium"
+                        className="mt-8 bg-[#3B6E54] text-white px-6 py-3 rounded-md transition-all duration-300 text-xs sm:text-sm md:text-base font-medium"
                     >
-                        Know More →
+                        Know More
                     </button>
                 </div>
             </div>

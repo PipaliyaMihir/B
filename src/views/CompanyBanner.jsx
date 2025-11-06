@@ -16,7 +16,19 @@ const images = [
 
 const CompanyBanner = () => {
     return (
-      <div className="relative w-[90%] mx-auto overflow-hidden">
+        <div className="relative w-full mx-auto overflow-hidden">
+            {/* Custom pagination dot color */}
+            <style>{`
+        .swiper-pagination-bullet {
+          background-color: #3B6E54 !important;
+          opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #3B6E54 !important;
+          opacity: 1;
+        }
+      `}</style>
+
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
@@ -28,7 +40,7 @@ const CompanyBanner = () => {
                     clickable: true,
                 }}
                 navigation={true}
-                modules={[Autoplay, Pagination]}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="w-full h-[250px] sm:h-[350px] md:h-[480px] lg:h-[600px]"
             >
                 {images.map((img, index) => (

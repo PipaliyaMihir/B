@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+heading {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

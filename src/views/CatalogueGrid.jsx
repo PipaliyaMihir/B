@@ -21,7 +21,7 @@ export default function CatalogueGrid() {
     <section className="min-h-screen bg-[#1e1e1e] text-white px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Hero Title - Fully Responsive */}
-        <div className="relative flex justify-center items-center py-8 sm:py-45">
+        <div className="relative flex justify-center items-center py-16 sm:py-25">
           <h1
             className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
             style={{ fontFamily: '"Cormorant Garamond", serif' }}

@@ -27,11 +27,11 @@ const Export = () => {
   };
 
   return (
-    <div className="bg-[#1e1e1e] text-white">
+    <div className="bg-[#1e1e1e] text-white w-[95%] mx-auto">
       {/* --- Top Export Heading --- */}
-      <div className="relative flex justify-center items-center py-16 sm:py-43">
+      <div className="relative flex justify-center items-center py-16">
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[120px] text-gray-600 font-bold select-none px-4 text-center"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] text-gray-600 font-bold select-none px-4"
           style={{ fontFamily: '"Cormorant Garamond", serif' }}
         >
           Export
@@ -39,7 +39,7 @@ const Export = () => {
       </div>
 
       {/* --- Why We Best Section --- */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-10 max-w-6xl mx-auto">
+      <section className="py-12 px-4 sm:px-6 md:px-10 mx-auto">
         <p className="text-sm text-[#3ba17d] mb-2 text-left md:text-left tracking-wide mx-7 sm:mx-0">
           Why We Best
         </p>
@@ -96,7 +96,7 @@ const Export = () => {
           {/* Right Image */}
           <div className="flex justify-center">
             <img
-              src="/ebg.png"
+              src="public/export-img.png"
               alt="Export Background"
               className="w-[320px] sm:w-[400px] md:w-[500px] h-auto object-contain opacity-90 mix-blend-screen"
             />

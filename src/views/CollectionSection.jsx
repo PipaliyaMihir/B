@@ -33,9 +33,27 @@ const CollectionSection = () => {
               alt={item.title}
               className="w-full h-48 sm:h-64 md:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-20"></div>
-            <div className="absolute inset-0 flex flex-col justify-between p-2 sm:p-4">
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-60"></div>
+
+            {/* Top Text */}
+            <div
+              className="absolute top-2 sm:top-4 left-3 sm:left-4 
+              opacity-100 sm:opacity-0 sm:group-hover:opacity-100
+              translate-y-0 sm:group-hover:translate-y-1
+              transition-all duration-700 delay-150"
+            >
               <p className="text-xs sm:text-sm text-gray-200">{item.title}</p>
+            </div>
+
+            {/* Bottom Text */}
+            <div
+              className="absolute bottom-2 sm:bottom-4 left-3 sm:left-4 
+              opacity-100 sm:opacity-0 sm:group-hover:opacity-100
+              translate-y-0 sm:group-hover:-translate-y-1
+              transition-all duration-700 delay-300"
+            >
               <p className="text-[9px] sm:text-xs text-gray-300 tracking-widest uppercase">
                 Luxurious
               </p>
@@ -56,9 +74,29 @@ const CollectionSection = () => {
               alt={item.title}
               className="w-full h-32 sm:h-48 md:h-64 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-20"></div>
-            <div className="absolute inset-0 flex flex-col justify-between p-2 sm:p-3">
-              <p className="text-[10px] sm:text-sm text-gray-200">{item.title}</p>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-60"></div>
+
+            {/* Top Text */}
+            <div
+              className="absolute top-2 sm:top-3 left-2 sm:left-3 
+              opacity-100 sm:opacity-0 sm:group-hover:opacity-100
+              translate-y-0 sm:group-hover:translate-y-1
+              transition-all duration-700 delay-150"
+            >
+              <p className="text-[10px] sm:text-sm text-gray-200">
+                {item.title}
+              </p>
+            </div>
+
+            {/* Bottom Text */}
+            <div
+              className="absolute bottom-2 sm:bottom-3 left-2 sm:left-3 
+              opacity-100 sm:opacity-0 sm:group-hover:opacity-100
+              translate-y-0 sm:group-hover:-translate-y-1
+              transition-all duration-700 delay-300"
+            >
               <p className="text-[8px] sm:text-[10px] text-gray-300 tracking-widest uppercase">
                 Luxurious
               </p>
