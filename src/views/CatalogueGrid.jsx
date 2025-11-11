@@ -18,7 +18,8 @@ export default function CatalogueGrid() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#1e1e1e] text-white px-4 sm:px-6 md:px-8">
+    <section className="min-h-screen w-[80%] mx-auto bg-(--bg) text-white px-4 sm:px-6 md:px-8"
+      style={{ fontFamily: "var(--head-font)" }}>
       <div className="max-w-7xl mx-auto">
         {/* Hero Title - Fully Responsive */}
         <div className="relative flex justify-center items-center py-16 sm:py-25">
@@ -32,7 +33,7 @@ export default function CatalogueGrid() {
 
 
         {/* Grid - Fully Responsive */}
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-items-center">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-15 justify-items-center">
           {catalogueItems.map((item) => (
             <div
               key={item.id}

@@ -28,7 +28,7 @@ const App = () => {
   return (
     <>
       {/* Full background wrapper */}
-      <div style={{ backgroundColor: "#1E1E1E", minHeight: "100vh", scrollBehavior: "smooth" }}
+      <div style={{ backgroundColor: "var(--bg)", minHeight: "100vh", scrollBehavior: "smooth" }}
       className="pt-19" >
         <Navbar />
         <ScrollToTop />

@@ -29,7 +29,8 @@ const Technology = () => {
   ];
 
   return (
-    <div className="bg-[#1E1E1E] relative mx-auto w-[90%] text-white overflow-hidden">
+    <div className="bg-(--bg) relative mx-auto w-[80%] text-white overflow-hidden"
+      style={{ fontFamily: "var(--head-font)" }}>
       {/* --- Top Export Title --- */}
       <div className="relative flex justify-center items-center py-16 sm:py-24">
         <h1
@@ -42,18 +43,20 @@ const Technology = () => {
 
       {/* Innovation Section */}
       <section className="mb-20 mx-4 sm:mx-0">
-        <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
+        <p className="text-teal-500 text-base font-medium uppercase tracking-wide">
           Innovation
         </p>
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif mb-5 leading-tight">
+        <div className="space-y-10 grid md:grid-cols-2 gap-20 items-center">
+          <div className="space-y-5">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif leading-tight">
               We Commit to Innovation
             </h2>
-            <p className="text-gray-400 mb-4 text-base">
+            <p className="text-gray-400 text-xl"
+              style={{ fontFamily: "var(--body-font)" }}>
               Seamless Technological Excellence for Unmatched Quality!
             </p>
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed text-justify">
+            <p className="text-gray-400 text-xm leading-relaxed text-justify"
+              style={{ fontFamily: "var(--body-font)" }}>
               At Breezo Group of Company, innovation isn't just a goal — it's a continuous journey
               toward perfection. We redefine standards daily through cutting-edge technology,
               advanced research, and creative craftsmanship.
@@ -90,17 +93,19 @@ const Technology = () => {
         <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
           Crafted With Care
         </p>
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif mb-6 leading-tight">
+        <div className="space-y-10 grid md:grid-cols-2 gap-30 items-center">
+          <div className="space-y-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif leading-tight ">
               We Promise Quality
             </h2>
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 text-justify">
+            <p className="text-gray-400 text-xl leading-relaxed mb-6 text-justify"
+              style={{ fontFamily: "var(--body-font)" }}>
               Our designers use advanced technology to craft unique designs with natural hues,
               premium textures, and tailored aesthetics — perfectly aligning with your space’s
               theme.
             </p>
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed text-justify">
+            <p className="text-gray-400 text-xl leading-relaxed text-justify"
+              style={{ fontFamily: "var(--body-font)" }}>
               With high-tech materials and precision engineering, we ensure that every Breezo
               product delivers unmatched quality and durability.
             </p>

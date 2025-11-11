@@ -67,13 +67,15 @@ const OurSpecialities = () => {
   ];
 
   return (
-    <div className="bg-[#1e1e1e] mx-7 sm:mx-0 text-white py-12 sm:py-16 px-4 sm:px-10 md:px-20 lg:px-28">
+    <div className="bg-(--bg) mx-7 sm:mx-0 text-white py-12 sm:py-16 px-4 sm:px-10 md:px-20 lg:px-28">
       {/* Heading */}
       <div className="text-left sm:text-left mb-10 sm:mb-12">
-        <p className="text-[#3ba17d] text-xs sm:text-sm mb-1 sm:mb-2 font-medium tracking-wide uppercase">
+        <p className="text-[#3ba17d] text-xs sm:text-sm mb-1 sm:mb-2 font-medium tracking-wide uppercase"
+        style={{ fontFamily: "var(--head-font)" }}>
           Our Specialities
         </p>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif"
+        style={{ fontFamily: "var(--head-font)" }}>
           The Breezo Difference
         </h2>
       </div>
@@ -84,6 +86,7 @@ const OurSpecialities = () => {
           <div
             key={index}
             className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
+            style={{ fontFamily: "var(--body-font)" }}
           >
             <div className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4">
               {feature.icon} {/* Render the component here */}

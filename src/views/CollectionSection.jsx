@@ -1,17 +1,18 @@
 import React from "react";
 
 const collections = [
-  { id: 1, title: "Classic Collection", image: "wall.png" },
-  { id: 2, title: "Modern Collection", image: "wall.png" },
-  { id: 3, title: "Elegant Design", image: "wall.png" },
-  { id: 4, title: "Luxury Series", image: "wall.png" },
-  { id: 5, title: "Premium Look", image: "wall.png" },
-  { id: 6, title: "Artistic Finish", image: "wall.png" },
+  { id: 1, title: "Classic Collection", image: "public/psdmarchpang46 1.png" },
+  { id: 2, title: "Modern Collection", image: "public/psdmarchpang46 1.png" },
+  { id: 3, title: "Elegant Design", image: "public/psdmarchpang46 1.png" },
+  { id: 4, title: "Luxury Series", image: "public/psdmarchpang46 1.png" },
+  { id: 5, title: "Premium Look", image: "public/psdmarchpang46 1.png" },
+  { id: 6, title: "Artistic Finish", image: "public/psdmarchpang46 1.png" },
 ];
 
 const CollectionSection = () => {
   return (
-    <div className="bg-[#1e1e1e] text-white py-12 sm:py-16 px-4 sm:px-8 lg:px-20 mx-7 sm:mx-28">
+    <div className="bg-(--bg)] text-white py-12 sm:py-16 px-4 sm:px-8 lg:px-20 mx-7 sm:mx-28"
+      style={{ fontFamily: "var(--head-font)" }}>
       {/* Section Header */}
       <p className="text-[#3ba17d] text-xs sm:text-sm mb-3 sm:mb-4 font-medium">
         Our Collection

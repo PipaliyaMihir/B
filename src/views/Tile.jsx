@@ -2,7 +2,7 @@ import React from "react";
 
 const AvailableTileSizes = () => {
   return (
-    <div className="bg-[#1E1E1E] text-white mx-7 sm:mx-0 py-12 sm:py-16 px-4 sm:px-6 md:px-20">
+    <div className="bg-(--bg) text-white mx-7 sm:mx-0 py-12 sm:py-16 px-4 sm:px-6 md:px-20">
       {/* Heading */}
       <div className="text-left sm:text-left">
         <p className="text-[#3ba17d] text-xs sm:text-sm mb-1 sm:mb-2">Our Range</p>
