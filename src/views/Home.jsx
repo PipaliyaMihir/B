@@ -9,7 +9,7 @@ import CompanyBanner from "./CompanyBanner";
 
 const Home = () => {
     return (
-        <div className="bg-[#1e1e1e] text-white min-h-screen">
+        <div className="bg-(--bg) font-(--head-font) min-h-screen">
             {/* Top Banner Image */}
             <div className="relative">
                 <CompanyBanner />

@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
-heading {
-    font-family: 'Cormorant Garamond', serif;
-}
+/* 🎨 Global Variables */
+:root {
+  --head-font: 'Cormorant Garamond', serif;
+  --body-font: 'Poppins', sans-serif;
 
-body {
-    font-family: 'Poppins', sans-serif;
+  --sm: 480px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+
+  --bg: #1A191A;
 }

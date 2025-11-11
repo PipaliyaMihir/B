@@ -1,4 +1,5 @@
 import React from "react";
+import "../index.css";
 import { useNavigate } from "react-router-dom";
 
 // ✅ Use relative public path correctly (no need to import from /public)
@@ -10,10 +11,12 @@ const About = () => {
     return (
         <>
             {/* About Section */}
-            <div className="bg-[#1E1E1E] text-white mx-7 sm:mx-8 lg:mx-28 px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+            <div className="bg-(--bg) font-[var(--head-font)] text-white mx-7 sm:mx-8 lg:mx-28 px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
                 {/* Left side text + image */}
                 <div>
-                    <p className="text-[#3ba17d] text-xs sm:text-sm mb-3">About Us</p>
+                    <p className="text-[#3ba17d] 
+                    
+                    font-[var(--head-font)] text-xs sm:text-sm mb-3">About Us</p>
                     <h2 className="text-2xl sm:text-3xl md:text-[40px] font-serif mb-6 leading-snug">
                         Breezo Group of Company <br />
                         Where Innovation Meets Perfection
