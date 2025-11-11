@@ -39,7 +39,6 @@ const CompanyBanner = () => {
                 pagination={{
                     clickable: true,
                 }}
-                navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="w-full h-[250px] sm:h-[350px] md:h-[480px] lg:h-[600px]"
             >

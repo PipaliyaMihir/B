@@ -17,13 +17,13 @@ const CollectionSection = () => {
       <p className="text-[#3ba17d] text-xs sm:text-sm mb-3 sm:mb-4 font-medium">
         Our Collection
       </p>
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-serif mb-8 sm:mb-10 max-w-3xl mx-auto sm:mx-0 leading-snug">
+      <h2 className=" text-xl sm:text-2xl md:text-3xl font-serif mb-8 sm:mb-10 max-w-3xl mx-auto sm:mx-0 leading-snug">
         Breezo - Experience a collection crafted with elegance, precision, and
         timeless design.
       </h2>
 
       {/* First Row - 2 Images */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-8">
         {collections.slice(0, 2).map((item) => (
           <div
             key={item.id}
@@ -64,7 +64,7 @@ const CollectionSection = () => {
       </div>
 
       {/* Second Row - 4 Images */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-6 ">
         {collections.slice(2, 6).map((item) => (
           <div
             key={item.id}
@@ -73,7 +73,7 @@ const CollectionSection = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-32 sm:h-48 md:h-64 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-48 sm:h-48 md:h-64 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
             {/* Overlay */}

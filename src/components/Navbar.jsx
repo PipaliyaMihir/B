@@ -19,7 +19,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center justify-center gap-10 text-sm font-medium relative">
+        <div className="hidden lg:flex items-center justify-center gap-10 text-sm font-medium relative">
           <Link to="/" className="text-gray-200 hover:text-white transition flex items-center justify-center">
             Home
           </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
 
         {/* Contact Button (Desktop) */}
-        <div className="hidden md:flex items-center justify-center">
+        <div className="hidden lg:flex items-center justify-center">
           <Link
             to="/contact"
             className="flex items-center justify-center gap-2 bg-[#3B6E54]/80 backdrop-blur-sm text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-[#3B6E54] transition"
@@ -120,7 +120,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-200 focus:outline-none flex items-center justify-center"
+          className="lg:hidden text-gray-200 focus:outline-none flex items-center justify-center"
           onClick={toggleMenu}
         >
           {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
@@ -129,11 +129,15 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-[#1E1E1E] flex flex-col items-center justify-center gap-6 py-6 transition-all duration-500 overflow-hidden ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        className={`lg:hidden bg-[#1E1E1E] flex flex-col items-center justify-center -mt-1.5 gap-6 py-6 transition-all duration-500 overflow-hidden ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
       >
         <Link to="/company" onClick={closeMenu} className="text-gray-200 hover:text-white transition flex items-center justify-center">
           Company
+        </Link>
+
+        <Link to="/usabout" onClick={closeMenu} className="text-gray-200 hover:text-white transition flex items-center justify-center">
+          About Us
         </Link>
 
         {/* Mobile Dropdown */}

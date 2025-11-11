@@ -9,7 +9,7 @@ const About = () => {
         <>
             {/* About Section */}
             <div
-                className="text-white px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-15 items-center"
+                className="text-white px-4 sm:px-6 py-16 grid lg:grid-cols-2 gap-15 items-center"
                 style={{
                     backgroundColor: "var(--bg)",
                     width: "80%",
@@ -39,12 +39,11 @@ const About = () => {
                             alt="Interior Design"
                             className="rounded-lg w-full h-auto md:h-[284px] object-cover"
                         />
-            
                     </div>
                 </div>
 
                 {/* Right side description */}
-                <div className="text-gray-300 leading-relaxed pl-[90px]">
+                <div className="text-gray-300 leading-relaxed lg:pl-[90px]">
                     <p
                         className="text-gray-300 text-xs sm:text-sm sm:text-[14px] md:text-base leading-[1.6rem] sm:leading-[1.8rem] tracking-[0.2px] text-justify"
                         style={{ fontFamily: "var(--body-font)" }}

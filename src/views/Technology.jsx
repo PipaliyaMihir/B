@@ -29,7 +29,7 @@ const Technology = () => {
   ];
 
   return (
-    <div className="bg-(--bg) relative mx-auto w-[80%] text-white overflow-hidden"
+    <div className="bg-(--bg) relative mx-auto w-[74%] 2xl:w-[60%] text-white overflow-hidden"
       style={{ fontFamily: "var(--head-font)" }}>
       {/* --- Top Export Title --- */}
       <div className="relative flex justify-center items-center py-16 sm:py-24">
@@ -42,7 +42,7 @@ const Technology = () => {
       </div>
 
       {/* Innovation Section */}
-      <section className="mb-20 mx-4 sm:mx-0">
+      <section className="mb-20 sm:mx-0">
         <p className="text-teal-500 text-base font-medium uppercase tracking-wide">
           Innovation
         </p>
@@ -73,7 +73,7 @@ const Technology = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mb-20">
+      <section className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
         {features.map((feature, index) => (
           <div
             key={index}
@@ -89,7 +89,7 @@ const Technology = () => {
       </section>
 
       {/* Quality Section */}
-      <section className="mx-4 sm:mx-0 mb-20">
+      <section className="sm:mx-0 mb-20">
         <p className="text-teal-500 text-base mb-4 font-medium uppercase tracking-wide">
           Crafted With Care
         </p>

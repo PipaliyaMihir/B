@@ -49,10 +49,10 @@ const Export = () => {
 
       {/* Why We Best Section */}
       <section className="py-12 px-4 sm:px-6 md:px-10 mx-auto">
-        <p className="text-xl text-[#3ba17d] mb-2 text-left md:text-left tracking-wide mx-7 sm:mx-0">
+        <p className="text-xl text-[#3ba17d] mb-2 text-left md:text-left tracking-wide sm:mx-0">
           Why We Best
         </p>
-        <h2 className="text-2xl sm:text-3xl md:text-[40px] text-gray-100 mb-12 text-left mx-7 sm:mx-0 md:text-left">
+        <h2 className="text-2xl sm:text-3xl md:text-[40px] text-gray-100 mb-12 text-left sm:mx-0 md:text-left">
           Why import tiles from Breezo <br />
           <span>Group of Company</span>
         </h2>
@@ -75,8 +75,8 @@ const Export = () => {
       </section>
 
       {/* --- Export Globally Section --- */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-16">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-7 sm:mx-auto">
+      <section className="py-12 sm:py-16 sm:px-6 md:px-10 lg:px-16">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-5 sm:mx-auto">
           <div>
             <p className="text-sm text-[#3ba17d] mb-2 tracking-wide">
               Export Globally
@@ -85,7 +85,7 @@ const Export = () => {
               Export Globally
             </h2>
             <p
-              className="text-sm sm:text-base text-gray-300 leading-relaxed tracking-wide text-justify pr-25"
+              className="text-sm sm:text-base text-gray-300 leading-relaxed tracking-wide text-justify lg:pr-25"
               style={{ fontFamily: "var(--body-font)" }}
             >
               A strong and ever-growing customer base across multiple countries
@@ -93,7 +93,7 @@ const Export = () => {
               global exporters of premium tiles and ceramics.
             </p>
             <p
-              className="mt-4 text-sm sm:text-base text-gray-300 leading-relaxed tracking-wide text-justify pr-25"
+              className="mt-4 text-sm sm:text-base text-gray-300 leading-relaxed tracking-wide text-justify lg:pr-25"
               style={{ fontFamily: "var(--body-font)" }}
             >
               Our brand has become a synonym for innovation, superior quality,
@@ -107,7 +107,7 @@ const Export = () => {
             <img
               src="public/export-img.png"
               alt="Export Background"
-              className="w-[320px] sm:w-[400px] md:w-[500px] h-auto object-contain"
+              className="w-[330px] sm:w-[400px] md:w-[500px] h-auto object-contain"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@ const Export = () => {
       </section>
 
       {/* --- 🌍 Global Footprint Section (newly added) --- */}
-      <section className="py-16 px-6 sm:px-10 md:px-16 bg-(--bg) rounded-2xl my-20 text-left">
+      <section className="py-16 px-6 sm:px-10 md:px-16 bg-(--bg) rounded-2xl text-left">
         <p className="text-[#3ba17d] text-sm mb-2 tracking-wide">
           Going Global
         </p>
@@ -145,7 +145,7 @@ const Export = () => {
       </section>
 
       {/* --- Contact Section --- */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 lg:px-24 max-w-5xl mx-7 sm:mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 lg:px-24 max-w-5xl sm:mx-auto">
         <p className="text-[#3ba17d] text-sm sm:text-md mb-2 font-light">
           Let's Connect
         </p>
