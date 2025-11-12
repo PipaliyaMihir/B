@@ -481,18 +481,31 @@ const Usabout = () => {
             Our Core Values
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20">
+          <div className="bg-(--bg) grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20">
             {[
               { img: "/innovation.png", title: "Driven by Innovation" },
               { img: "/quality.png", title: "Commitment to Quality" },
               { img: "/real value.png", title: "Provide Real Value" },
             ].map((val, i) => (
               <div key={i} className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 rounded-full border-2 border-dashed border-[#3ba17d] flex items-center justify-center mb-6">
-                  <div className="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center">
+                <div className="w-32 h-32 flex items-center justify-center relative mb-6">
+                  <svg
+                    className="absolute inset-0 w-full h-full -rotate-90"
+                    viewBox="0 0 100 100"
+                  >
+                    <circle
+                      className="fill-none stroke-red-700 stroke-4 [stroke-dasharray:20_13] [stroke-linecap:round]"
+                      cx="50"
+                      cy="50"
+                      r="48"
+                    />
+                  </svg>
+
+                  <div className="relative w-28 h-28 rounded-full bg-(--bg) flex items-center justify-center">
                     <img src={val.img} alt={val.title} className="w-14 h-14" />
                   </div>
                 </div>
+
                 <h3 className="text-base sm:text-lg font-light">
                   {val.title}
                 </h3>

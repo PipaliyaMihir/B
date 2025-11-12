@@ -79,9 +79,20 @@ const Technology = () => {
             key={index}
             className="text-center group hover:scale-105 transition-transform duration-300"
           >
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-dashed border-red-500 flex items-center justify-center group-hover:border-red-700 transition-colors duration-300">
-              {feature.icon}
+            <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center relative">
+              <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
+                <circle
+                  className="fill-none stroke-red-700 stroke-4 [stroke-dasharray:20_15] [stroke-linecap:round] transition-colors duration-300 group-hover:stroke-red-700"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                />
+              </svg>
+              <div className="relative flex items-center justify-center">
+                {feature.icon}
+              </div>
             </div>
+
             <h3 className="text-lg sm:text-xl font-serif mb-3">{feature.title}</h3>
             <p className="text-gray-400 text-sm sm:text-base px-4">{feature.desc}</p>
           </div>
